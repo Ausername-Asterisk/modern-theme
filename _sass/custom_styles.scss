@@ -2,24 +2,41 @@
 
 /* New flexible styles for the wrapper */
 .wrapper {
+  --wrapper-width: 90%;
+  --wrapper-margin: 20px auto;
+  --wrapper-padding: 15px;
+  --wrapper-border-radius: 8px;
+  --wrapper-box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.7), -20px -20px 60px rgba(255, 255, 255, 0.7);
+  
+  --text-font-size: 1rem;
+  --text-line-height: 1.5;
+  --text-max-height: 4.5em;
+  
+  --btn-font-size: 16px;
+  --btn-padding: 0 8px;
+  --btn-background: #3F51B5;
+  --btn-border-radius: 4px;
+  --btn-color: #fff;
+  --btn-text-content: 'Expand';
+
   display: flex;
   flex-direction: column; /* Stack children vertically */
-  margin: 20px auto; /* Center the wrapper */
-  width: 90%; /* Use 90% of the parent container's width */
+  margin: var(--wrapper-margin); /* Center the wrapper */
+  width: var(--wrapper-width); /* Use 90% of the parent container's width */
   overflow: hidden;
-  border-radius: 8px;
-  padding: 15px; /* Padding inside the wrapper */
-  box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.7), -20px -20px 60px rgba(255, 255, 255, 0.7);
+  border-radius: var(--wrapper-border-radius);
+  padding: var(--wrapper-padding); /* Padding inside the wrapper */
+  box-shadow: var(--wrapper-box-shadow);
 }
 
 .text {
-  font-size: 1rem; /* Flexible font size */
+  font-size: var(--text-font-size); /* Flexible font size */
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
   position: relative;
-  line-height: 1.5;
-  max-height: 4.5em;
+  line-height: var(--text-line-height);
+  max-height: var(--text-max-height);
   transition: .3s max-height;
 }
 
@@ -43,17 +60,17 @@
   float: right;
   clear: both;
   margin-left: 20px;
-  font-size: 16px;
-  padding: 0 8px;
-  background: #3F51B5;
+  font-size: var(--btn-font-size);
+  padding: var(--btn-padding);
+  background: var(--btn-background);
   line-height: 24px;
-  border-radius: 4px;
-  color: #fff;
+  border-radius: var(--btn-border-radius);
+  color: var(--btn-color);
   cursor: pointer;
 }
 
 .btn::after {
-  content: 'Expand';
+  content: var(--btn-text-content);
 }
 
 .exp {
