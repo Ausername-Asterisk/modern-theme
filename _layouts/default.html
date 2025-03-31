@@ -9,7 +9,12 @@
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
-
+      
+      <!-- Table of Contents Section -->
+      <div class="toc-wrapper">
+        {% include toc.html html=content %}
+      </div>
+      
       {%- if jekyll.environment == 'production' and site.gtm -%}
         {%- include gtm_body.html -%}
       {%- endif -%}
