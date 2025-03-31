@@ -28,14 +28,17 @@
 }
 
 .toc-wrapper {
-    position: sticky;
-    top: 10px; /* Distance from the top */
-    max-height: 90vh; /* Prevents it from taking up too much space */
-    overflow-y: auto; /* Enables scrolling inside TOC if it's long */
-    background: #f8f9fa; /* Light gray background */
-    padding: 15px;
-    border-left: 4px solid #007bff;
-    font-size: 16px;
+    position: fixed;
+    top: 10px; /* Distance from top */
+    left: 20px; /* Adjust for left-side placement */
+    width: 250px; /* Set width to avoid overlap */
+    max-height: 90vh; /* Prevent too much scrolling */
+    overflow-y: auto; /* Enable scroll inside TOC */
+    background: #ffffff; /* White background */
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keeps TOC above other elements */
 }
 
 .profile-img {
