@@ -37,7 +37,7 @@
   background: #0f4c81;
   color: white;
   border: none;
-  border-radius: 30px;
+  border-radius: 20%;
   cursor: pointer;
   z-index: 10000;
   box-shadow: 0 4px 6px rgba(0,0,0,0.15);
@@ -75,7 +75,7 @@
   box-shadow: 0 4px 6px rgba(0,0,0,0.15);
   color: #000000; /* Change text color to black */
   /*padding: 12px 20px;*/
-  border-radius: 30px;
+  border-radius: 20%;
   outline: 3px solid rgba(147, 149, 151, 0.2);
 }
 
@@ -105,7 +105,7 @@
 
 .toc-wrapper a:hover {
   color: #0f4c81;
-  padding-left: 5px;
+  padding-left: 3px;
 }
 
 /* Ensure the current item stands out */
