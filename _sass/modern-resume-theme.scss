@@ -64,17 +64,27 @@
 }
 
 .toc-wrapper {
-  width: 280px;
-  max-height: 60vh;
-  background: rgba(255, 255, 255, 0.98);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-  backdrop-filter: blur(8px);
-  transform: translateY(20px);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: auto;
+  /* Existing styles */
+  resize: both; /* Makes element resizable */
+  min-width: 250px; /* Minimum resize width */
+  min-height: 150px; /* Minimum resize height */
+  max-width: 80vw; /* Maximum width relative to viewport */
+  max-height: 80vh; /* Maximum height relative to viewport */
+  overflow: auto; /* Changed from overflow-y for both directions */
 }
+
+/* Custom resize handle styling */
+.toc-wrapper::-webkit-resizer {
+  background-color: #2196F3;
+  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.toc-wrapper::-webkit-resizer:hover {
+  background-color: #1976D2;
+}
+
 
 .toc-wrapper ul {
   list-style: none;
