@@ -27,6 +27,7 @@
   }
 }
 
+/* Table of Contents Styles */
 .toc-wrapper {
   position: fixed;
   top: 100px; /* Position from the top */
@@ -37,6 +38,7 @@
   z-index: 9999;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  display: none; /* Initially hidden */
 }
 
 .toc-title {
@@ -79,6 +81,7 @@
   }
 }
 
+/* Profile Image */
 .profile-img {
   width: 200px;
   height: 200px;
