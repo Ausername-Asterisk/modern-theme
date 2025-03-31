@@ -70,13 +70,12 @@
   max-width: 80vw; /* Maximum width relative to viewport */
   max-height: 80vh; /* Maximum height relative to viewport */
   overflow: auto; /* Changed from overflow-y for both directions */
-  background-color: rgba(25, 118, 210, 0.8); /* Semi-transparent blue */
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Change background to white */
+  color: #000000; /* Change text color to black */
+  padding: 12px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
   border-radius: 30px;
+  outline: 3px solid #ffffff;
 }
 
 
