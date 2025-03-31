@@ -71,7 +71,7 @@
   max-width: 80vw; /* Maximum width relative to viewport */
   max-height: 80vh; /* Maximum height relative to viewport */
   overflow: auto; /* Changed from overflow-y for both directions */
-  background-color: #000000; /* Change background to white */
+  background-color: #ffffff; /* Change background to white */
   box-shadow: 0 4px 6px rgba(0,0,0,0.15);
   color: #000000; /* Change text color to black */
   /*padding: 12px 20px;*/
@@ -93,7 +93,7 @@
 }
 
 .toc-wrapper a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1em;
   display: block;
@@ -108,7 +108,7 @@
 /* Ensure the current item stands out */
 .toc-wrapper .current {
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
   padding: 5px;
 }
 
