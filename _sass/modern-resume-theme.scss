@@ -34,7 +34,7 @@
   bottom: 25px;
   right: 25px;
   padding: 12px 20px;
-  background: #6667AB;
+  background: #0f4c81;
   color: white;
   border: none;
   border-radius: 30px;
@@ -48,7 +48,7 @@
 }
 
 #toc-toggle:hover {
-  background: #1976D2;
+  background: #0f4c81;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
@@ -70,8 +70,8 @@
   max-width: 80vw; /* Maximum width relative to viewport */
   max-height: 80vh; /* Maximum height relative to viewport */
   overflow: auto; /* Changed from overflow-y for both directions */
+  background-color: white; /* Set background to white */
 }
-
 
 
 
