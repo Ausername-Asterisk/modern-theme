@@ -39,31 +39,37 @@
   border-radius: 8px;
 }
 
-.toc-wrapper ul {
+.toc-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.toc-list {
   padding-left: 0;
   list-style: none;
 }
 
-.toc-wrapper ul li {
+.toc-list li {
   margin-bottom: 12px;
 }
 
-.toc-wrapper a {
+.toc-list a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-.toc-wrapper a.active {
+.toc-list a.active {
   color: #007bff;
 }
 
-.toc-wrapper a:hover {
+.toc-list a:hover {
   color: #0056b3;
 }
 
-/* Add media query for small screen adjustments */
+/* Responsive adjustments */
 @media screen and (max-width: 767px) {
   .toc-wrapper {
     position: absolute;
