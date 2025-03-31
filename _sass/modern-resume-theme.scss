@@ -8,13 +8,13 @@
   margin-bottom: 3px;
 }
 
-.header-right a{
-  color:inherit;
-  font-weight:500;
+.header-right a {
+  color: inherit;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
-  .header-container div{
+  .header-container div {
     text-align: center;
   }
 
@@ -32,10 +32,45 @@
   top: 100px; /* Position from the top */
   right: 20px; /* Position from the right side of the page */
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
   padding: 15px;
   z-index: 9999;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.toc-wrapper ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.toc-wrapper ul li {
+  margin-bottom: 12px;
+}
+
+.toc-wrapper a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.toc-wrapper a.active {
+  color: #007bff;
+}
+
+.toc-wrapper a:hover {
+  color: #0056b3;
+}
+
+/* Add media query for small screen adjustments */
+@media screen and (max-width: 767px) {
+  .toc-wrapper {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 220px;
+  }
 }
 
 .profile-img {
@@ -51,12 +86,6 @@
   -moz-box-shadow: inset 0 0 10px #636161;
   -webkit-box-shadow: inset 0 0 10px #636161;
   box-shadow: inset 0 0 10px #636161;
-  /* Commenting out the inner shadow */
-  /*
-  -moz-box-shadow: inset 0 0 20px #636161;
-  -webkit-box-shadow: inset 0 0 20px #636161;
-  box-shadow: inset 0 0 20px #636161;
-  */
 }
 
 .list-container {
@@ -65,7 +94,7 @@
   }
 }
 
-.border-weak  {
+.border-weak {
   padding-bottom: 8px;
   border-bottom: dashed 1px #CCCCCC;
 }
@@ -165,7 +194,7 @@
 }
 
 .footer-container {
-  margin-top:100px;
+  margin-top: 100px;
 }
 
 .footer-container p {
