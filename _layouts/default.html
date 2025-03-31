@@ -10,10 +10,8 @@
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       
-      <!-- Table of Contents Button -->
+      <!-- Table of Contents Section -->
       <button id="toggle-toc" onclick="toggleTOC()">Toggle Table of Contents</button>
-      
-      <!-- Table of Contents Container -->
       <div id="toc-container" style="display:none;">
         <div class="toc-wrapper">
           {% include toc.html %}
@@ -45,18 +43,26 @@
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
   {% endif %}
 
-  <!-- Add JavaScript to handle the TOC toggle functionality -->
   <script type="text/javascript">
     function toggleTOC() {
-      var tocContainer = document.getElementById("toc-container");
-      if (tocContainer.style.display === "none") {
+      const tocContainer = document.getElementById("toc-container");
+      const tocWrapper = document.querySelector('.toc-wrapper');
+      
+      if (tocContainer.style.display === "none" || !tocContainer.style.display) {
         tocContainer.style.display = "block";
+        setTimeout(() => {
+          tocWrapper.style.opacity = "1";
+          tocWrapper.style.transform = "translateY(0)";
+        }, 10);
       } else {
-        tocContainer.style.display = "none";
+        tocWrapper.style.opacity = "0";
+        tocWrapper.style.transform = "translateY(20px)";
+        setTimeout(() => {
+          tocContainer.style.display = "none";
+        }, 300);
       }
     }
   </script>
   
 </body>
-
 </html>
