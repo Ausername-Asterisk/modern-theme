@@ -27,6 +27,17 @@
   }
 }
 
+.toc-wrapper {
+    position: sticky;
+    top: 10px; /* Distance from the top */
+    max-height: 90vh; /* Prevents it from taking up too much space */
+    overflow-y: auto; /* Enables scrolling inside TOC if it's long */
+    background: #f8f9fa; /* Light gray background */
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    font-size: 16px;
+}
+
 .profile-img {
   width: 200px;
   height: 200px;
