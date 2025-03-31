@@ -95,11 +95,12 @@
 }
 
 .toc-wrapper a {
-  color: #000000;
+  font-size: 15px; /* Change font size to 15px */
+  color: rgba(147, 149, 151, 0.8); /* Change text color to rgba(147, 149, 151, 0.8) */
   text-decoration: none;
-  font-size: 1em;
   display: block;
   transition: color 0.3s ease;
+  padding-left: 10px; /* Space before the text */
 }
 
 .toc-wrapper a:hover {
