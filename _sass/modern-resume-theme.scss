@@ -87,9 +87,11 @@
   margin: 0;
 }
 
+
 .toc-wrapper li {
+  padding-left: 10px; /* Add space before the text of each item */
   padding: 8px 0;
-  border-bottom: 1px solid rgba(147, 149, 151, 0.2); /* Change border color to match theme */
+  border-bottom: 1px solid rgba(147, 149, 151, 0.2);
 }
 
 .toc-wrapper a {
