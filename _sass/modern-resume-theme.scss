@@ -73,17 +73,7 @@
   overflow: auto; /* Changed from overflow-y for both directions */
 }
 
-/* Custom resize handle styling */
-.toc-wrapper::-webkit-resizer {
-  background-color: #2196F3;
-  border-radius: 4px;
-  width: 12px;
-  height: 12px;
-}
 
-.toc-wrapper::-webkit-resizer:hover {
-  background-color: #1976D2;
-}
 
 
 .toc-wrapper ul {
