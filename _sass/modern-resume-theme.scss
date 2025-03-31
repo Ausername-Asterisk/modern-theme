@@ -27,6 +27,25 @@
   }
 }
 
+/* Table of Contents Button at the bottom right */
+#toggle-toc {
+  position: fixed;
+  bottom: 20px; /* Position from the bottom */
+  right: 20px; /* Position from the right */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 9998;
+}
+
+#toggle-toc:hover {
+  background-color: #0056b3;
+}
+
 /* Table of Contents Styles */
 .toc-wrapper {
   position: fixed;
