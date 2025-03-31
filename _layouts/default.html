@@ -11,8 +11,11 @@
     <div class="wrapper">
       
       <!-- Table of Contents Section -->
-      <div class="toc-wrapper">
-        {% include toc.html html=content %}
+      <button id="toggle-toc" onclick="toggleTOC()">Toggle Table of Contents</button>
+      <div id="toc-container" style="display:none;">
+        <div class="toc-wrapper">
+          {% include toc.html %}
+        </div>
       </div>
       
       {%- if jekyll.environment == 'production' and site.gtm -%}
@@ -35,9 +38,23 @@
   </main>
 
   {%- include footer.html -%}
+  
   {% if site.darkmode == false %}
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
   {% endif %}
+
+  <!-- Add JavaScript to handle the TOC toggle functionality -->
+  <script type="text/javascript">
+    function toggleTOC() {
+      var tocContainer = document.getElementById("toc-container");
+      if (tocContainer.style.display === "none") {
+        tocContainer.style.display = "block";
+      } else {
+        tocContainer.style.display = "none";
+      }
+    }
+  </script>
+  
 </body>
 
 </html>
