@@ -43,19 +43,42 @@
 
   {%- include footer.html -%}
 
-  <script>
-    document.getElementById('toc-toggle').addEventListener('click', function() {
-      const container = document.getElementById('toc-container');
-      const isVisible = container.classList.contains('visible');
-      
-      if (!isVisible) {
-        container.classList.add('visible');
-        container.style.display = 'block';
-        setTimeout(() => {
-          container.style.opacity = '1';
-          container.querySelector('.toc-wrapper').style.transform = 'translateY(0)';
-        }, 10);
-      } else {
+<script>
+  // Toggle the visibility of the TOC when the toggle button is clicked
+  document.getElementById('toc-toggle').addEventListener('click', function(event) {
+    const container = document.getElementById('toc-container');
+    const isVisible = container.classList.contains('visible');
+    
+    // If TOC is not visible, show it
+    if (!isVisible) {
+      container.classList.add('visible');
+      container.style.display = 'block';
+      setTimeout(() => {
+        container.style.opacity = '1';
+        container.querySelector('.toc-wrapper').style.transform = 'translateY(0)';
+      }, 10);
+    } else {
+      // If TOC is visible, hide it
+      container.style.opacity = '0';
+      container.querySelector('.toc-wrapper').style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        container.classList.remove('visible');
+        container.style.display = 'none';
+      }, 300);
+    }
+
+    // Prevent the click event from propagating to the document
+    event.stopPropagation();
+  });
+
+  // Close the TOC when clicking anywhere outside of it
+  document.addEventListener('click', function(event) {
+    const container = document.getElementById('toc-container');
+    const toggleButton = document.getElementById('toc-toggle');
+    
+    // Check if the clicked target is not the TOC container or the toggle button
+    if (!container.contains(event.target) && event.target !== toggleButton) {
+      if (container.classList.contains('visible')) {
         container.style.opacity = '0';
         container.querySelector('.toc-wrapper').style.transform = 'translateY(20px)';
         setTimeout(() => {
@@ -63,7 +86,9 @@
           container.style.display = 'none';
         }, 300);
       }
-    });
-  </script>
+    }
+  });
+</script>
+  
 </body>
 </html>
