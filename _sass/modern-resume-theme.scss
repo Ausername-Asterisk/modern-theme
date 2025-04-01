@@ -76,7 +76,7 @@
   color: #000000; /* Change text color to black */
   /*padding: 12px 20px;*/
   border-radius: 30px;
-  outline: 3px solid rgba(147, 149, 151, 0.2);
+  outline: 1px solid rgba(147, 149, 151, 0.2);
 }
 
 
@@ -91,11 +91,11 @@
 .toc-wrapper li {
   padding-left: 10px; /* Add space before the text of each item */
   padding: 8px 0;
-  border-bottom: 1px solid rgba(147, 149, 151, 0.2);
+  border-bottom: 1px solid rgba(147, 149, 151, 0.25);
 }
 
 .toc-wrapper a {
-  font-size: 12px; /* Change font size to 15px */
+  font-size: 11px; /* Change font size to 15px */
   color: #97999B; /* Change text color to rgba(147, 149, 151, 0.8) */
   text-decoration: none;
   display: block;
@@ -106,6 +106,7 @@
 .toc-wrapper a:hover {
   color: #0f4c81;
   padding-left: 5%;
+  font-weight: bold;
 }
 
 /* Ensure the current item stands out */
