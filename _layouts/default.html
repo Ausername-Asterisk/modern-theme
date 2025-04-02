@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-site-name="Ken K. Hong | Data Science & Analytics">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 {%- include head.html -%} 
 
 <body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
