@@ -103,7 +103,7 @@
   font-family: Roboto, sans-serif;
   font-feature-settings: "kern", "liga", "pnum";
   display: block;
-  transition: color 0.1s ease, padding-left 0.12s ease-out, font-weight 0.1s ease; 
+  transition: color 0.05s ease, padding-left 0.12s ease-out, font-weight 0.1s ease; 
   padding-left: 35px; /* Space before the text */
 }
 
@@ -132,7 +132,9 @@
     right: 5%;
     bottom: 70px;
   }
-
+  .toc-wrapper a:hover {
+      padding-left: 10%;
+  }
   .toc-wrapper {
     width: 100%;
     max-height: 50vh;
